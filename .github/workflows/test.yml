@@ -11,8 +11,8 @@ jobs:
     name: Testing
     runs-on: ubuntu-latest
     env:
-      - LOTUS_SECRET_URL: ${{ secrets.LOTUS_SECRET_URL }}
-      - LOTUS_SECRET_JWT: ${{ secrets.LOTUS_SECRET_JWT }}
+      LOTUS_SECRET_URL: ${{ secrets.LOTUS_SECRET_URL }}
+      LOTUS_SECRET_JWT: ${{ secrets.LOTUS_SECRET_JWT }}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
