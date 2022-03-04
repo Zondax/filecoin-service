@@ -4,14 +4,14 @@ authors = ["Zondax <info@zondax.ch>"]
 version = "0.1.0"
 edition = "2018"
 license = "Apache-2.0"
-repository = "https://github.com/Zondax/filecoin-signing-tools"
+repository = "https://github.com/Zondax/filecoin-service"
 description =""
 
 [dependencies]
 log="0.4"
 thiserror = "1.0.21"
 serde_json = "1.0.58"
-filecoin-signer = { path = "../signer" }
+filecoin-signer = { git = "https://github.com/Zondax/filecoin-signing-tools", rev="d8cb8a742b2a3c9e2b417b5c27142a5c787335cb" }
 forest_message = { default-features = false, features = ["pairing"],version = "0.7"  }
 warp = "0.2.5"
 jsonrpc-core = "15.1.0"

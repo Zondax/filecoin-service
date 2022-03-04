@@ -1,6 +1,14 @@
-# Filecoin signig tool service
+# Filecoin Service
 
-Repository for the deprecated filecoin service signing tools from https://github.com/Zondax/filecoin-signing-tools.
+Filecoin Service is an application.
 
+## Getting Started
 
-Please don't use at it is not maintained. This repo exist for the only purpose of archiving it.
+This application is authored using [Abscissa], a Rust application framework.
+
+For more information, see:
+
+[Documentation]
+
+[Abscissa]: https://github.com/iqlusioninc/abscissa
+[Documentation]: https://docs.rs/abscissa_core/

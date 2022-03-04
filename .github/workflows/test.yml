@@ -1,0 +1,21 @@
+name: Tests
+
+on:
+  - push
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  tests:
+    name: Testing
+    runs-on: ubuntu-latest
+    env:
+      LOTUS_SECRET_URL: ${{ secrets.LOTUS_SECRET_URL }}
+      LOTUS_SECRET_JWT: ${{ secrets.LOTUS_SECRET_JWT }}
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - run: cargo --version
+      - name: Run tests
+        run: cargo test --verbose
