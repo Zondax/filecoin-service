@@ -1,0 +1,17 @@
+name: Tests
+
+on:
+  pull_request:
+    branches: [ master ]
+
+
+jobs:
+  tests:
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - run: cargo --version
+      - name: Run tests
+        run: cargo test --verbose
